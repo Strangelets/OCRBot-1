@@ -50,7 +50,7 @@ async def start(bot, update):
 
 @Bot.on_message(filters.private & filters.photo)
 async def ocr(bot, msg):
-    lang_code = 'hin'
+    lang_code = hin
     data_url = f"https://github.com/tesseract-ocr/tessdata/raw/main/{lang_code.text}.traineddata"
     dirs = '/app/vendor/tessdata/'
     path = f'{dirs}{lang_code.text}.traineddata'
